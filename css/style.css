@@ -1,0 +1,121 @@
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+
+body {
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+   color: #fff;
+   background-color: #000;
+}
+
+.wrapper {
+   min-height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;   
+}
+
+.wrapper__body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   width: 100%;
+   height: 100%;
+   cursor: pointer;
+}
+
+.text-button {
+   position: absolute;
+   font-size: 6em;
+   color: rgb(245, 6, 153);
+   letter-spacing: 0.1em;
+   text-shadow: 0 0 1px rgb(245, 6, 153), 0 0 2px rgb(245, 6, 153), 0 0 3px rgb(245, 6, 153), 0 0 4px rgb(245, 6, 153), 0 0 5px rgb(245, 6, 153), 0 0 6px rgb(245, 6, 153),
+   0 0 7px rgb(245, 6, 153), 0 0 8px rgb(245, 6, 153), 0 0 9px rgb(245, 6, 153), 0 0 10px rgb(245, 6, 153);
+   padding: 0.5em 0.9em 0.5em 0.9em;
+   border-radius: 1em;
+   box-shadow: 0 0 1px rgb(245, 6, 153), 0 0 2px rgb(245, 6, 153), 0 0 3px rgb(245, 6, 153), 0 0 4px rgb(245, 6, 153), 0 0 5px rgb(245, 6, 153), 0 0 6px rgb(245, 6, 153),
+   0 0 7px rgb(245, 6, 153), 0 0 8px rgb(245, 6, 153), 0 0 9px rgb(245, 6, 153), 0 0 10px rgb(245, 6, 153), inset 0 0 1px rgb(245, 6, 153), inset 0 0 2px rgb(245, 6, 153), inset 0 0 3px rgb(245, 6, 153),
+   inset 0 0 4px rgb(245, 6, 153), inset 0 0 5px rgb(245, 6, 153), inset 0 0 6px rgb(245, 6, 153),
+   inset 0 0 7px rgb(245, 6, 153), inset 0 0 8px rgb(245, 6, 153), inset 0 0 9px rgb(245, 6, 153), inset 0 0 10px rgb(245, 6, 153);
+}
+
+.wrapper__body:hover .text-button {
+   opacity: 0;
+}
+
+.wrapper__body:hover .text-wishes{
+   display: block;
+}
+
+.text-wishes {
+   display: none;
+   font-size: 6em;
+   color: red;
+   letter-spacing: 0.1em;
+   text-shadow: 0 0 1px red, 0 0 2px red, 0 0 3px red, 0 0 4px red, 0 0 5px red, 0 0 6px red,
+   0 0 7px red, 0 0 8px red, 0 0 9px red, 0 0 10px red;
+   border-radius: 1em;
+   padding: 0.5em 0.9em 0.5em 0.9em;
+   box-shadow: 0 0 1px red, 0 0 2px red, 0 0 3px red, 0 0 4px red, 0 0 5px red, 0 0 6px red,
+   0 0 7px red, 0 0 8px red, 0 0 9px red, 0 0 10px red, inset 0 0 1px red, inset 0 0 2px red, inset 0 0 3px red,
+   inset 0 0 4px red, inset 0 0 5px red, inset 0 0 6px red,
+   inset 0 0 7px red, inset 0 0 8px red, inset 0 0 9px red, inset 0 0 10px red;
+}
+
+@media (max-width: 1050px) {
+   .text-button { 
+      font-size: 4em;
+      text-shadow: 0 0 1px rgb(245, 6, 153), 0 0 2px rgb(245, 6, 153), 0 0 3px rgb(245, 6, 153), 0 0 4px rgb(245, 6, 153), 0 0 5px rgb(245, 6, 153), 0 0 6px rgb(245, 6, 153),
+      0 0 7px rgb(245, 6, 153), 0 0 8px rgb(245, 6, 153);
+      box-shadow: 0 0 1px rgb(245, 6, 153), 0 0 2px rgb(245, 6, 153), 0 0 3px rgb(245, 6, 153), 0 0 4px rgb(245, 6, 153), 0 0 5px rgb(245, 6, 153), 0 0 6px rgb(245, 6, 153),
+       0 7px rgb(245, 6, 153), 0 0 8px rgb(245, 6, 153), inset 0 0 1px rgb(245, 6, 153), inset 0 0 2px rgb(245, 6, 153), inset 0 0 3px rgb(245, 6, 153),
+      inset 0 0 4px rgb(245, 6, 153), inset 0 0 5px rgb(245, 6, 153), inset 0 0 6px rgb(245, 6, 153),
+       0 0 7px rgb(245, 6, 153), inset 0 0 8px rgb(245, 6, 153);
+   }
+   .text-wishes { 
+      font-size: 4em;
+      text-shadow: 0 0 1px red, 0 0 2px red, 0 0 3px red, 0 0 4px red, 0 0 5px red, 0 0 6px red,
+      0 0 7px red, 0 0 8px red;
+      box-shadow: 0 0 1px red, 0 0 2px red, 0 0 3px red, 0 0 4px red, 0 0 5px red, 0 0 6px red,
+      0 0 7px red, 0 0 8px red, inset 0 0 1px red, inset 0 0 2px red, inset 0 0 3px red,
+      inset 0 0 4px red, inset 0 0 5px red, inset 0 0 6px red,
+      inset 0 0 7px red, inset 0 0 8px red;
+   }
+}
+
+@media (max-width: 700px) {
+   .text-button { 
+      font-size: 3em;
+      text-shadow: 0 0 1px rgb(245, 6, 153), 0 0 2px rgb(245, 6, 153), 0 0 3px rgb(245, 6, 153), 0 0 4px rgb(245, 6, 153), 0 0 5px rgb(245, 6, 153), 0 0 6px rgb(245, 6, 153);
+      box-shadow: 0 0 1px rgb(245, 6, 153), 0 0 2px rgb(245, 6, 153), 0 0 3px rgb(245, 6, 153), 0 0 4px rgb(245, 6, 153), 0 0 5px rgb(245, 6, 153), 0 0 6px rgb(245, 6, 153), inset 0 0 1px rgb(245, 6, 153), inset 0 0 2px rgb(245, 6, 153), inset 0 0 3px rgb(245, 6, 153),
+      inset 0 0 4px rgb(245, 6, 153), inset 0 0 5px rgb(245, 6, 153), inset 0 0 6px rgb(245, 6, 153);
+   }
+   .text-wishes { 
+      font-size: 3em;
+      text-shadow: 0 0 1px red, 0 0 2px red, 0 0 3px red, 0 0 4px red, 0 0 5px red, 0 0 6px red;
+      box-shadow: 0 0 1px red, 0 0 2px red, 0 0 3px red, 0 0 4px red, 0 0 5px red, 0 0 6px red, inset 0 0 1px red, inset 0 0 2px red, inset 0 0 3px red,
+      inset 0 0 4px red, inset 0 0 5px red, inset 0 0 6px red;
+   }
+}
+
+@media (max-width: 520px) {
+   .text-button { font-size: 2em; }
+   .text-wishes { font-size: 2em; }
+}
+
+@media (max-width: 350px) {
+   .text-wishes { font-size: 1.8em; }
+}
